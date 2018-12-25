@@ -15,6 +15,7 @@
 		0C0C28BE21D066F10068B6E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0C28BD21D066F10068B6E5 /* main.m */; };
 		0C0C28C821D066F10068B6E5 /* ModuleATests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0C28C721D066F10068B6E5 /* ModuleATests.m */; };
 		0C0C28D321D066F10068B6E5 /* ModuleAUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0C28D221D066F10068B6E5 /* ModuleAUITests.m */; };
+		0C13327421D21B8A0088AD56 /* Target_ModuleA.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C13327321D21B8A0088AD56 /* Target_ModuleA.m */; };
 		34397176A8C9698EE54573E8 /* libPods-ModuleA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DBA5911EF226D6694F16863 /* libPods-ModuleA.a */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,8 @@
 		0C0C28CE21D066F10068B6E5 /* ModuleAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModuleAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C0C28D221D066F10068B6E5 /* ModuleAUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModuleAUITests.m; sourceTree = "<group>"; };
 		0C0C28D421D066F10068B6E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C13327221D21B8A0088AD56 /* Target_ModuleA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_ModuleA.h; sourceTree = "<group>"; };
+		0C13327321D21B8A0088AD56 /* Target_ModuleA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_ModuleA.m; sourceTree = "<group>"; };
 		8C4C9D515E592C1D413DD074 /* Pods-ModuleA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuleA.release.xcconfig"; path = "Pods/Target Support Files/Pods-ModuleA/Pods-ModuleA.release.xcconfig"; sourceTree = "<group>"; };
 		8DBA5911EF226D6694F16863 /* libPods-ModuleA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ModuleA.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE9824B3A6B4840049756187 /* Pods-ModuleA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuleA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ModuleA/Pods-ModuleA.debug.xcconfig"; sourceTree = "<group>"; };
@@ -108,11 +111,9 @@
 		0C0C28AD21D066F10068B6E5 /* ModuleA */ = {
 			isa = PBXGroup;
 			children = (
+				0C13327121D21B520088AD56 /* Target */,
 				0C0C28AE21D066F10068B6E5 /* AppDelegate.h */,
 				0C0C28AF21D066F10068B6E5 /* AppDelegate.m */,
-				0C0C28B121D066F10068B6E5 /* ViewController.h */,
-				0C0C28B221D066F10068B6E5 /* ViewController.m */,
-				0C0C28B421D066F10068B6E5 /* Main.storyboard */,
 				0C0C28B721D066F10068B6E5 /* Assets.xcassets */,
 				0C0C28B921D066F10068B6E5 /* LaunchScreen.storyboard */,
 				0C0C28BC21D066F10068B6E5 /* Info.plist */,
@@ -137,6 +138,18 @@
 				0C0C28D421D066F10068B6E5 /* Info.plist */,
 			);
 			path = ModuleAUITests;
+			sourceTree = "<group>";
+		};
+		0C13327121D21B520088AD56 /* Target */ = {
+			isa = PBXGroup;
+			children = (
+				0C0C28B421D066F10068B6E5 /* Main.storyboard */,
+				0C0C28B221D066F10068B6E5 /* ViewController.m */,
+				0C0C28B121D066F10068B6E5 /* ViewController.h */,
+				0C13327221D21B8A0088AD56 /* Target_ModuleA.h */,
+				0C13327321D21B8A0088AD56 /* Target_ModuleA.m */,
+			);
+			path = Target;
 			sourceTree = "<group>";
 		};
 		3475E7C9CBC4E19311FE7919 /* Pods */ = {
@@ -308,6 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C13327421D21B8A0088AD56 /* Target_ModuleA.m in Sources */,
 				0C0C28B321D066F10068B6E5 /* ViewController.m in Sources */,
 				0C0C28BE21D066F10068B6E5 /* main.m in Sources */,
 				0C0C28B021D066F10068B6E5 /* AppDelegate.m in Sources */,
