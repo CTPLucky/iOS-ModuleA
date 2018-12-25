@@ -17,10 +17,6 @@ Pod::Spec.new do |s|
 
   s.requires_arc     = true
 
-  s.subspec 'Controller' do |ss|
-        ss.source_files = "ModuleA-Component/Controller/**/*.{h,m}"
-    end
-    
   s.subspec 'Target' do |ss|
       ss.source_files = "ModuleA-Component/Target/**/*.{h,m}"
       ss.dependency "ModuleA/Controller"
