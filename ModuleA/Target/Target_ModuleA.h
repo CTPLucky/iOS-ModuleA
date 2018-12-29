@@ -12,3 +12,5 @@
 @interface Target_ModuleA : NSObject
 
 - (UIViewController *)Action_viewController:(NSDictionary *)params;
+
+@end
